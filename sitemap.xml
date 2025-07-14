@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>greenhorizensgroup.com/index.html</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="greenhorizensgroup.com/index_en.html"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="greenhorizensgroup.com/index.html"/>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>greenhorizensgroup.com/index_en.html</loc>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="fr"
+               href="greenhorizensgroup.com/index.html"/>
+    <xhtml:link 
+               rel="alternate"
+               hreflang="en"
+               href="greenhorizensgroup.com/index_en.html"/>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>greenhorizensgroup.com/mentions-legales.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="greenhorizensgroup.com/mentions-legales_en.html"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="fr"
+               href="greenhorizensgroup.com/mentions-legales.html"/>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>greenhorizensgroup.com/mentions-legales_en.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="fr"
+               href="greenhorizensgroup.com/mentions-legales.html"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="greenhorizensgroup.com/mentions-legales_en.html"/>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>greenhorizensgroup.com/privacy.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="greenhorizensgroup.com/privacy_en.html"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="fr"
+               href="greenhorizensgroup.com/privacy.html"/>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>greenhorizensgroup.com/privacy_en.html</loc>
+    <xhtml:link
+               rel="alternate"
+               hreflang="fr"
+               href="greenhorizensgroup.com/privacy.html"/>
+    <xhtml:link
+               rel="alternate"
+               hreflang="en"
+               href="greenhorizensgroup.com/privacy_en.html"/>
+    <lastmod>2025-07-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+</urlset>
