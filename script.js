@@ -159,9 +159,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navLinks.forEach(link => {
       link.classList.remove('active');
+      link.removeAttribute('aria-current');
       const dataSection = link.getAttribute('data-section');
       if (dataSection && dataSection === currentSectionId) {
         link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
         // Optional: Update title based on section
         // if (document.title !== `Green Horizons - ${link.textContent}`) {
         //   document.title = `Green Horizons - ${link.textContent}`;

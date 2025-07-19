@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+    (function(){
+      var img = new Image();
+      img.onload = function() {
+        if (img.height > 0) {
+          document.documentElement.classList.add('webp');
+        }
+      };
+      img.src = 'data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==';
+    })();
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Next-generation ecological bricks. Bio-sourced materials, elegant design, and sustainable construction for the home of tomorrow." />
@@ -8,22 +19,19 @@
   <meta name="author" content="Green Horizons" />
   <meta name="theme-color" content="#6F8F72">
 
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NZXWQXVQ');</script>
-<!-- End Google Tag Manager -->
 
-  <!-- Security Headers -->
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'self'; 
     img-src 'self' https://images.unsplash.com data:; 
     style-src 'self' https://fonts.googleapis.com https://www.googletagmanager.com; 
     font-src 'self' https://fonts.gstatic.com;
     script-src 'self' https://formspree.io https://www.googletagmanager.com;
-    connect-src 'self' https://formspree.io https://www.google-analytics.com;
+    connect-src 'self' http://localhost:3001 https://formspree.io https://www.google-analytics.com;
     form-action 'self' https://formspree.io;
     frame-ancestors 'none';
     base-uri 'self';
@@ -32,14 +40,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="X-Frame-Options" content="DENY">
   <meta name="Referrer-Policy" content="strict-origin-when-cross-origin">
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="greenhorizensgroup.com/" />
   <meta property="og:title" content="Green Horizons - Next-Generation Ecological Construction" />
   <meta property="og:description" content="The next-generation brick, designed for tomorrow. Ecological. Elegant. Durable." />
   <meta property="og:image" content="greenhorizensgroup.com/assets/og-image.jpg" />
 
-  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="greenhorizensgroup.com/" />
   <meta property="twitter:title" content="Green Horizons - Next-Generation Ecological Construction" />
@@ -116,47 +122,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </script>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZXWQXVQ"
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZXWQXVQ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
   <div class="photo-overlay"></div>
   
-
+  <!-- ===== Navigation ===== -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
       <div class="logo">
         <a href="index.html" aria-label="Homepage" class="logo-link">
-  <img
-    src="favicon.png"
-    alt="Logo Green Horizons Group"
-    width="32"
-    height="32"
-    class="logo-icon"
-  />
+  <picture>
+    <source srcset="favicon.webp" type="image/webp">
+  </picture>
   <span class="logo-text">
     Green Horizons <span class="logo-group-text">Group</span>
   </span>
 </a>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-menu" role="menubar">
+          <li role="none"><a href="#features" role="menuitem" data-section="features">Advantages</a></li>
+          <li role="none"><a href="#about" role="menuitem" data-section="about">About</a></li>
+          <li role="none"><a href="#process" role="menuitem" data-section="process">Process</a></li>
+          <li role="none"><a href="#co2-cycle" role="menuitem" data-section="co2-cycle">CO2 Cycle</a></li>
+          <li role="none">
+            <a href="#" role="menuitem" class="btn primary open-modal-btn nav-contact-btn">
+              <span>Contact</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <title>Arrow icon</title>
+                <path d="M7 17L17 7M17 7H7M17 7V17"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="language-switcher"><a href="index.html">FR</a></div>
       </div>
       <button class="menu-toggle" aria-label="Navigation menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <ul class="nav-menu" role="menubar">
-        <li role="none"><a href="#features" role="menuitem" data-section="features">Advantages</a></li>
-        <li role="none"><a href="#about" role="menuitem" data-section="about">About</a></li>
-        <li role="none"><a href="#process" role="menuitem" data-section="process">Process</a></li>
-        <li role="none"><a href="#co2-cycle" role="menuitem" data-section="co2-cycle">CO2 Cycle</a></li>
-        <li role="none"><a href="#founders" role="menuitem" data-section="founders">Founders</a></li>
-        <li role="none"><a href="#" role="menuitem" class="open-modal-btn">Contact</a></li>
-        <li role="none" class="language-switcher"><a href="index.html">FR</a></li>
-      </ul>
     </div>
   </nav>
 
+  <!-- ===== Main Content ===== -->
   <main>
+    <!-- Hero Section -->
     <header class="hero" role="banner" id="hero">
       <div class="hero-background">
         <div class="floating-elements">
@@ -201,6 +212,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </header>
 
+    <!-- Advantages Section -->
     <section class="features" id="features">
       <div class="container">
         <h2 class="fade-in">One brick. <span class="highlight">Three promises</span>.</h2>
@@ -236,6 +248,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
+    <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
             <h2 class="fade-in">Building the future, <span class="highlight">brick by brick</span>.</h2>
@@ -246,12 +259,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <p>Each brick we produce is the result of local know-how and constant research to minimize our ecological footprint, from the sourcing of raw materials to delivery to your construction site.</p>
                 </div>
                 <div class="about-image fade-in delay-2">
-                    <img src="assets/champ-chanvre.jpg.jpeg" alt="Hemp field for the production of ecological bricks">
+                    <picture>
+                      <source srcset="assets/champ-chanvre.webp" type="image/webp">
+                      <img src="assets/champ-chanvre.jpg.jpeg" alt="Hemp field for the production of ecological bricks">
+                    </picture>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Process Section -->
     <section class="process" id="process">
       <div class="container">
         <h2 class="fade-in">Our <span class="highlight">transparent</span> process</h2>
@@ -289,6 +306,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
+    <!-- CO2 Cycle Section -->
     <section class="co2-cycle" id="co2-cycle">
       <div class="container">
         <h2 class="fade-in">The Virtuous <span class="highlight">CO2 Cycle</span></h2>
@@ -327,6 +345,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
+    <!-- Sustainability Section -->
     <section class="sustainability" id="sustainability">
       <div class="container">
         <div class="sustainability-content">
@@ -355,55 +374,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
-    <section class="founders" id="founders">
-      <div class="container">
-        <h2 class="fade-in">The faces of <span class="highlight">Green Horizons</span></h2>
-        <div class="founder-cards">
-          <!-- Replace images with photos of the founders -->
-          <div class="founder-card fade-in delay-1">
-            <div class="founder-photo">
-              <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format&fit=crop" alt="Photo of Jean Dupont">
-            </div>
-            <div class="founder-info">
-              <h3>Morgan Heldt</h3>
-              <p class="founder-role">CEO & Co-founder</p>
-              <p>Passionate about ecology, Jean had the vision for Green Horizons to revolutionize construction.</p>
-            </div>
-          </div>
-          <div class="founder-card fade-in delay-2">
-            <div class="founder-photo">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop" alt="Photo of Marie Martin">
-            </div>
-            <div class="founder-info">
-              <h3>Julien Phan</h3>
-              <p class="founder-role">Architect & Co-founder</p>
-              <p>Marie combines aesthetics and durability to create innovative designs with our bricks.</p>
-            </div>
-          </div>
-          <div class="founder-card fade-in delay-3">
-            <div class="founder-photo">
-              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1887&auto=format&fit=crop" alt="Photo of Paul Durand">
-            </div>
-            <div class="founder-info">
-              <h3>Quentin Lionel</h3>
-              <p class="founder-role">Materials Engineer</p>
-              <p>The technical expert behind the unique composition of our ecological bricks.</p>
-            </div>
-          </div>
-          <div class="founder-card fade-in delay-4">
-            <div class="founder-photo">
-              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop" alt="Photo of Sophie Leroy">
-            </div>
-            <div class="founder-info">
-              <h3>Christian Joergensen</h3>
-              <p class="founder-role">Development Manager</p>
-              <p>Sophie builds relationships with our partners and clients for a greener future.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Call to Action (CTA) Section -->
     <section class="cta" id="contact-cta">
       <div class="container">
         <h2 class="fade-in">What if your walls became <span class="highlight">meaningful</span>?</h2>
@@ -415,33 +386,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <path d="M7 17L17 7M17 7H7M17 7V17"/>
             </svg>
           </a>
-          <div class="cta-info">
-            <p>Free sample • Quote within 48h • Delivery in France</p>
-          </div>
         </div>
         <p class="fade-in delay-2">Locally designed. Built to last.</p>
       </div>
     </section>
   </main>
 
+  <!-- ===== Newsletter CTA ===== -->
+  <section class="newsletter-cta" id="newsletter">
+    <div class="container">
+      <div class="newsletter-cta-content">
+        <div class="newsletter-cta-text">
+          <h2 class="fade-in">Join the <span class="highlight">Green Horizens</span> adventure.</h2>
+          <p class="fade-in delay-1">Be the first to know about our innovations, receive our launch offers, and get a behind-the-scenes look at the future of construction. Enter your email to become part of our community.</p>
+        </div>
+        <div class="newsletter-cta-form fade-in delay-2">
+          <form id="footer-newsletter-form-en" action="https://formspree.io/f/mrbknanp" method="POST">
+            <input type="hidden" name="_subject" value="New newsletter subscriber!">
+            <div class="form-group">
+              <label for="newsletter-email-cta-en" class="sr-only">Your email address</label>
+              <input type="email" id="newsletter-email-cta-en" name="email" placeholder="Your email address" required>
+              <button type="submit" class="btn primary">
+                <span>Sign Up</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><title>Arrow Icon</title><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+              </button>
+            </div>
+            <p class="form-consent">By subscribing, you agree to receive our communications. You can unsubscribe at any time.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
   <footer role="contentinfo">
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
           <div class="footer-logo">
-            <a href="index.html"
-     aria-label="Accueil – Green Horizons Group"
-     class="logo">
-    <img src="favicon.png"
-         alt="Logo Green Horizons Group"
-         width="32"
-         height="32"
-         class="logo-icon" />
-    <span class="logo-text">
-      Green Horizons 
-      <span class="logo-group-text">Group</span>
-    </span>
-  </a>
+            <a href="index.html" aria-label="Accueil – Green Horizons Group" class="logo">
+              <picture>
+                <source srcset="favicon.webp" type="image/webp">
+              </picture>
+              <span class="logo-text">
+                Green Horizens 
+                <span class="logo-group-text">Group</span>
+              </span>
+            </a>
           </div>
           <p>The future of ecological construction</p>
         </div>
@@ -487,11 +478,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Green Horizons. All rights reserved.</p>
+        <p>&copy; 2025 Green Horizens. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
+  <!-- ===== Utilities & Modals ===== -->
   <button class="scroll-to-top" aria-label="Back to top">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <title>Up arrow icon</title>
@@ -505,25 +497,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><title>Close</title><path d="M18 6L6 18M6 6l12 12"/></svg>
         </button>
         <h3>Contact us</h3>
-        <p>We are happy to answer your questions. Fill out the form and we will get back to you shortly.</p>
-        <form action="https://formspree.io/f/mldrdovk" method="POST">
-            <!-- IMPORTANT: Replace mldrdovk with your actual Formspree form ID for the form to work. -->
+        <form id="contact-form-en" action="https://formspree.io/f/mrbknanp" method="POST">
+            <input type="hidden" name="lang" value="en">
             <div class="form-group">
-                <label for="contact-name">Name</label>
-                <input type="text" id="contact-name" name="name" required>
+                <label for="contact-name-en">Name</label>
+                <input type="text" id="contact-name-en" name="name" required>
             </div>
-            <!-- Honeypot field for spam protection -->
             <div class="form-group honeypot">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject">
+              <label for="subject-en">Subject</label>
+              <input type="text" id="subject-en" name="subject">
             </div>
             <div class="form-group">
-                <label for="contact-email">Email</label>
-                <input type="email" id="contact-email" name="email" required>
+                <label for="contact-email-en">Email</label>
+                <input type="email" id="contact-email-en" name="email" required>
             </div>
             <div class="form-group">
-                <label for="contact-message">Message</label>
-                <textarea id="contact-message" name="message" rows="5" required></textarea>
+                <label for="contact-message-en">Message</label>
+                <textarea id="contact-message-en" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form-group form-group-checkbox">
+                <input type="checkbox" id="newsletter-subscribe-en" name="newsletter_subscribe" value="yes" checked>
+                <label for="newsletter-subscribe-en">I would like to subscribe to the newsletter to follow your project.</label>
             </div>
             <button type="submit" class="btn primary">Send message</button>
         </form>
