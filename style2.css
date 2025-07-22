@@ -1381,9 +1381,12 @@ footer {
   .newsletter-cta-text {
     text-align: center;
   }
-  @media (max-width: 768px) {
-    
-       
-        .nav-menu.active {
-   6     background-color: #6F8F72;;
-}
+  /* Appliquer ce style seulement sur les écrans de moins de 768px de large */
+    @media (max-width: 768px) {
+   
+      /* On cible le menu ouvert et on force la couleur de fond */
+      .nav-menu.active {
+        background-color: #6F8F72 !important;
+      }
+   
+    }
