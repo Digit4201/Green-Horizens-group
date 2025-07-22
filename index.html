@@ -28,12 +28,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
   <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self'; 
-    img-src 'self' https://images.unsplash.com data:; 
-    style-src 'self' https://fonts.googleapis.com https://www.googletagmanager.com; 
+    default-src 'self';
+    img-src 'self' https://images.unsplash.com data:;
+    style-src 'self' https://fonts.googleapis.com https://www.googletagmanager.com;
     font-src 'self' https://fonts.gstatic.com;
-    script-src 'self' https://formspree.io https://www.googletagmanager.com;
-    connect-src 'self' http://localhost:3001 https://formspree.io https://www.google-analytics.com;
+    script-src 'self' https://formspree.io https://www.googletagmanager.com https://*.googletagmanager.com;
+    connect-src 'self' http://localhost:3001 https://formspree.io https://*.google-analytics.com https://*.googletagmanager.com;
+    frame-src 'self' https://www.googletagmanager.com;
     form-action 'self' https://formspree.io;
     frame-ancestors 'none';
     base-uri 'self';
