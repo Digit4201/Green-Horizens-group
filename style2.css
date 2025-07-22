@@ -1381,4 +1381,9 @@ footer {
   .newsletter-cta-text {
     text-align: center;
   }
+  @media (max-width: 768px) {
+    
+       
+        .nav-menu.active {
+   6     background-color: #6F8F72;;
 }
