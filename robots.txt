@@ -1,48 +1,13 @@
 # ===================================================
 # ROBOTS.TXT - GREEN HORIZONS GROUP
-# Briques écologiques nouvelle génération
-# Construction durable et matériaux biosourcés
+# Optimisé pour une indexation et un rendu corrects.
 # ===================================================
 
-# === GENERAL ACCESS RULES ===
-# Allow all legitimate search engines
+# Autoriser tous les moteurs de recherche légitimes à accéder au site pour le rendu.
 User-agent: *
 Allow: /
 
-# === PRIORITY PAGES FOR INDEXING ===
-# Main pages (French & English)
-Allow: /index.html
-Allow: /index_en.html
-
-# Legal pages (required for trust signals)
-Allow: /privacy.html
-Allow: /privacy_en.html
-Allow: /mentions-legales.html
-Allow: /mentions-legales_en.html
-
-# === BLOCKED RESOURCES ===
-# Technical assets that don't need indexing
-Disallow: /assets/
-Disallow: /style2.css
-Disallow: /script.js
-Disallow: *.map$
-
-# Image files (save crawl budget)
-Disallow: *.jpg$
-Disallow: *.jpeg$
-Disallow: *.png$
-Disallow: *.gif$
-Disallow: *.webp$
-Disallow: *.svg$
-
-# Prevent duplicate content
-Disallow: /*?*
-Disallow: /*#*
-Disallow: /*&*
-Disallow: /print/
-Disallow: /*utm_*
-
-# Block potential security vulnerabilities
+# Bloquer les vulnérabilités de sécurité potentielles et les fichiers non pertinents.
 Disallow: /.git/
 Disallow: /.htaccess
 Disallow: /error_log
@@ -55,120 +20,11 @@ Disallow: /xmlrpc.php
 Disallow: /phpmyadmin/
 Disallow: /cgi-bin/
 
-# === GOOGLE SPECIFIC OPTIMIZATION ===
-User-agent: Googlebot
-Allow: /
-# Allow CSS/JS for proper page rendering
-Allow: /style2.css
-Allow: /script.js
-# Priority pages for Green Horizons business
-Allow: /index.html
-Allow: /index_en.html
-Allow: /privacy.html
-Allow: /privacy_en.html
-Allow: /mentions-legales.html
-Allow: /mentions-legales_en.html
+# Bloquer le contenu dupliqué provenant des paramètres d'URL.
+Disallow: /*?*
+Disallow: /*#*
+Disallow: /*&*
 
-# === BING OPTIMIZATION ===
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 2
-
-# === SOCIAL MEDIA CRAWLERS ===
-# Allow social media platforms for rich previews
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
-
-User-agent: WhatsApp
-Allow: /
-
-# === SEO TOOLS & ANALYTICS ===
-# Limit aggressive SEO crawlers
-User-agent: AhrefsBot
-Crawl-delay: 10
-
-User-agent: MJ12bot
-Crawl-delay: 10
-
-User-agent: SemrushBot
-Crawl-delay: 10
-
-User-agent: DotBot
-Crawl-delay: 10
-
-User-agent: MajesticSEO
-Crawl-delay: 10
-
-# === SPAM & SCRAPING PROTECTION ===
-# Block known content scrapers
-User-agent: EmailCollector
-Disallow: /
-
-User-agent: EmailSiphon
-Disallow: /
-
-User-agent: WebBandit
-Disallow: /
-
-User-agent: EmailWolf
-Disallow: /
-
-User-agent: ExtractorPro
-Disallow: /
-
-User-agent: CopyRightCheck
-Disallow: /
-
-User-agent: psbot
-Disallow: /
-
-User-agent: SurveyBot
-Disallow: /
-
-User-agent: webcollage
-Disallow: /
-
-User-agent: ia_archiver
-Disallow: /
-
-# === CONSTRUCTION INDUSTRY SPECIFIC ===
-# Allow construction industry directories
-User-agent: YellowPagesBot
-Allow: /
-
-User-agent: PagesJaunesBot
-Allow: /
-
-# === SITEMAP DECLARATION ===
-# Main sitemap for all pages
+# === DÉCLARATION DU SITEMAP ===
+# IMPORTANT : Remplacez cette URL par votre nom de domaine réel une fois le site en ligne.
 Sitemap: https://www.green-horizons.eco/sitemap.xml
-
-# Optional future sitemaps
-# Sitemap: https://www.green-horizons.eco/sitemap-images.xml
-# Sitemap: https://www.green-horizons.eco/sitemap-products.xml
-
-# === CRAWL OPTIMIZATION ===
-# Reasonable crawl delay to protect server
-Crawl-delay: 1
-
-# ===================================================
-# GREEN HORIZONS SPECIFIC NOTES:
-# - Optimized for ecological construction company
-# - Bilingual site (FR/EN) properly configured
-# - Formspree contact form protected
-# - Focus on sustainable building materials
-# - Local SEO ready for construction industry
-# ===================================================
-
-# DEPLOYMENT INSTRUCTIONS:
-# 1. Save this file as 'robots.txt'
-# 2. Upload to: https://www.green-horizons.eco/robots.txt
-# 3. Test at: https://www.google.com/webmasters/tools/robots-testing-tool
-# 4. Submit sitemap in Google Search Console
-# 5. Monitor in server logs for effectiveness
